@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+    <meta name="description" content="Сайт контактов">
+    <link rel="stylesheet" href="/school/contact-styles.css">
+</head>
+<body>
+    <header>
+        <h1>Контакты</h1>
+    </header>
+    <section id="contacts">
+        <div class="contact-info">
+            <h2>Контактная информация</h2>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Адрес: Санкт-Петербург, ул. Зольная, д. 15
+              </li>
+              <a href="https://vk.com/public220486639"><li>
+                <i class="fab fa-instagram"></i>VK
+              </li></a>
+              <li>
+                <i class="fas fa-envelope"></i> Email: <a href="mailto:info@example.com">arbuz@gmail.com</a>
+              </li>
+            </ul>
+          </div>          
+    </section>
+    <section id="feedback">
+        <h2>Обратная связь</h2>
+        <form action="submit-form.php" method="post">
+            <label for="name">Имя:</label>
+            <input type="text" name="name" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <label for="message">Сообщение:</label>
+            <textarea name="message" id="message" required></textarea>
+            <a href="/school/sended.html">Отправить</a>
+        </form>
+    </section>
+</body>
+<footer>
+    <div class="container">
+      <div class="back-to-top">
+        <a href="/school/index.html">Вернуться на главную</a>
+      </div>
+    </div>
+</footer>
+</html>
