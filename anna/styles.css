@@ -1,0 +1,129 @@
+/* styles.css */
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-image: url('https://kappa.lol/S7rK5');
+    background-size: 100px 100px; /* reduced size by 50% */
+    background-color: #ffe6e6; /* soft pink background */
+}
+
+.title {
+    font-size: 48px;
+    color: #ffc5c5; /* pastel pink */
+    text-align: center;
+    margin-bottom: 20px;
+    -webkit-text-stroke: 2px #fff; /* added text stroke */
+    -webkit-text-stroke-color: #fff; /* added text stroke color */
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px;
+}
+
+.photo {
+    max-width: 100%; /* set max-width to 100% */
+    height: 100%; /* set height to 100% */
+    object-fit: cover; /* maintain aspect ratio */
+    border-radius: 10px;
+    border: 5px solid #ffc5c5; /* pink border */
+    margin: 20px;
+}
+
+.text {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #ffc5c5; /* pink border */
+    border-radius: 10px;
+    background-color: #fff;
+    font-family: 'Montserrat', monospace; /* new font family */
+    font-size: 18px;
+    font-weight: bold; /* bold font */
+    line-height: 1.5;
+}
+
+.subtitle {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px;
+}
+
+.square-frame {
+    width: 250px; /* increased width by 25% */
+    height: 250px; /* increased height by 25% */
+    border: 2px solid #ffc5c5; /* pink border */
+    border-radius: 10px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.square-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.screenshots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px;
+}
+
+.rect-frame {
+    width: 375px; /* increased width by 25% */
+    height: 187.5px; /* increased height by 25% */
+    border: 2px solid #ffc5c5; /* pink border */
+    border-radius: 10px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.rect-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Responsive design for iPhone 13 */
+@media only screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+    .photo {
+        width: 100%;
+        height: 200px;
+    }
+    .text {
+        width: 100%;
+        margin: 20px;
+    }
+    .gallery {
+        flex-direction: column;
+    }
+    .square-frame {
+        width: 100%;
+        height: 200px;
+        margin: 20px;
+    }
+    .screenshots {
+        flex-direction: column;
+    }
+    .rect-frame {
+        width: 100%;
+        height: 150px;
+        margin: 20px;
+    }
+}
